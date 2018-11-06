@@ -38,4 +38,4 @@ EXPOSE 28017
 
 #ENTRYPOINT ["/sbin/tini", "--"]
 ENTRYPOINT ["/docker-entrypoint.sh"]
-CMD ["mongod", "--journal"] 
+CMD ["mongod", "--journal", "--smallfiles"] 
